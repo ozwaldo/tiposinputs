@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TiposInputs</string>
+    <string name="titulo_text">Controles Inputs</string>
+    <string name="nombre_text">Nombre:</string>
+    <string name="nombre_hint">Escribe tu nombre</string>
+    <string name="direccion_hint">Escribe tu dirección</string>
+    <string name="direccion_etiqueta">Dirección:</string>
+    <string name="telefono_text">Teléfono:</string>
+    <string name="telefono_hint">Escribe tu teléfono</string>
+    <string name="genero_text">Género:</string>
+    <string name="mujer_radio_etiqueta">Mujer</string>
+    <string name="hombre_radio_etiqueta">Hombre</string>
+
+    <string-array name="spinner_arreglo">
+        <item>Uriangato</item>
+        <item>Moroleón</item>
+        <item>Yuriria</item>
+        <item>Salvatierra</item>
+        <item>Cuitzeo</item>
+    </string-array>
+</resources>

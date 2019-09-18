@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titulo_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_text"
+        android:textSize="26dp"
+        />
+
+    <TextView
+        android:id="@+id/nombre_etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_text"
+        android:layout_below="@id/titulo_view"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="16dp"
+        />
+    <EditText
+        android:id="@+id/nombre_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_hint"
+        android:layout_below="@id/titulo_view"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/nombre_etiqueta"
+        android:inputType="textPersonName"
+        />
+    <TextView
+        android:id="@+id/direccion_etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/direccion_etiqueta"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/nombre_etiqueta"/>
+
+    <EditText
+            android:id="@+id/direccion_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/direccion_hint"
+        android:layout_below="@id/nombre_input"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/direccion_etiqueta"
+        android:inputType="textMultiLine"/>
+    <TextView
+        android:id="@+id/telefono_etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/telefono_text"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/direccion_etiqueta"/>
+
+    <EditText
+        android:id="@+id/telefono_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefono_hint"
+        android:layout_below="@id/direccion_input"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/telefono_etiqueta"
+        android:inputType="phone"/>
+
+    <TextView
+        android:id="@+id/genero_etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/genero_text"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/telefono_etiqueta"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogrup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical"
+        android:layout_below="@id/genero_etiqueta"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:id="@+id/mujer_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mujer_radio_etiqueta"
+            android:onClick="onRadioButtonClick"/>
+
+        <RadioButton
+            android:id="@+id/hombre_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hombre_radio_etiqueta"
+            android:onClick="onRadioButtonClick"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner_etiqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogrup_id"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp"/>
+
+
+
+
+
+</RelativeLayout>
+
